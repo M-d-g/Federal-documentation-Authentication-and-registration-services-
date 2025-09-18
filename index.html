@@ -6,34 +6,26 @@
   <title>Federal Documentation Authentication and Registration Services</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      min-height: 500vh;
-      background: #f4f4f4;
       margin: 0;
-      text-align: center;
+      padding: 0;
+      background: #000;
     }
-    .card {
-      background: #fff;
-      padding: 20px;
-      border-radius: 12px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-      max-width: 1200px;
-      max-height: 1200px;
-    }
-    img {
-      max-width: 100%;
-      max-height: 100%;
-      border-radius: 8px;
+    img.fullscreen {
+      width: 100vw;      /* Full width of viewport */
+      height: 100vh;     /* Full height of viewport */
+      object-fit: contain; /* Show entire image, maintain aspect ratio */
+      display: block;
     }
   </style>
 </head>
 <body>
-  <div class="card">
-    <img src="document.png.jpg" alt="Uploaded Document">
+  <!-- Document fills entire screen -->
+  <img src="document.png.jpg" alt="Scanned Document" class="fullscreen">
+
+  <!-- QR code (optional, shown below doc on scroll) -->
+  <div style="text-align:center; padding:10px; background:#fff;">
+    <p>Scan the QR code to open this site:</p>
+    <img src="qr_code_live.png" alt="QR Code to site" style="width:200px; height:auto;">
   </div>
 </body>
 </html>
