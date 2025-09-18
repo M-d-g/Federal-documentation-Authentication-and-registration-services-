@@ -3,37 +3,48 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ID Document Viewer</title>
+  <title>Federal Documentation Authentication and Registration Services</title>
   <style>
     body {
+      font-family: Arial, sans-serif;
       display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
       min-height: 100vh;
       background: #f4f4f4;
       margin: 0;
+      text-align: center;
     }
     .card {
       background: #fff;
       padding: 20px;
       border-radius: 12px;
       box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-      text-align: center;
+      max-width: 600px;
     }
     img {
       max-width: 100%;
       border-radius: 8px;
     }
+    .qr {
+      margin-top: 20px;
+    }
+    .qr img {
+      width: 200px;
+      height: auto;
+    }
   </style>
 </head>
 <body>
   <div class="card">
-    <h2>Document Viewer</h2>
-    <img src="document.png" alt="Uploaded Document">
+    <h2>Federal Documentation Authentication and Registration Services</h2>
     <p>Scanned Document Image</p>
-  </div><div style="text-align:center; margin-top:20px;">
-  <p>Scan the QR code to open this page on your phone:</p>
-  <img src="document.png" alt="QR Code to site" style="width:200px; height:auto;">
+    <img src="document.png" alt="Uploaded Document">
+    <div class="qr">
+      <p>Scan the QR code to open this site:</p>
+      <img src="qr_code_live.png" alt="QR Code to site">
+    </div>
   </div>
 </body>
 </html>
