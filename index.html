@@ -1,26 +1,27 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Federal Documentation Authentication and Registration Services</title>
+  <title>Document Viewer</title>
   <style>
-    body {
+    html, body {
       margin: 0;
       padding: 0;
-      background: #000;
+      height: 100%;
+      width: 100%;
+      background: #000; /* Black background for unused space */
     }
-    img.fullscreen {
-      width: 100vw;      /* Full width of viewport */
-      height: 100vh;     /* Full height of viewport */
-      object-fit: contain; /* Show entire image, maintain aspect ratio */
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: contain; /* Show whole image without cutting */
       display: block;
     }
   </style>
 </head>
 <body>
-  <!-- Document fills entire screen -->
-  <img src="document.png.jpg" alt="Scanned Document" class="fullscreen">
-
+  <img src="document.png.jpg" alt="Scanned Document">
 </body>
 </html>
